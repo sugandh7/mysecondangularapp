@@ -1,0 +1,15 @@
+<div class="media">
+  <h3 class="h3-responsive font-weight-bold mr-3">{{ value.time }}</h3>
+  <div class="media-body mb-3">
+    <span  (click)="handleDeleteClick()"  class="badge badge-danger text-center float-right">x</span>
+    <h6 class="mt-0 font-weight-bold">{{ value.subject }}</h6>
+
+    <p class="mb-0" *ngIf="value.location">
+      <i class="fa fa-location-arrow solid" style="font-size:14px;"></i>  {{ value.location }}
+    </p>
+  </div>
+</div>
+<p class="p-3 " style="background-color: #D8D8D8;">
+  {{ value.description }}
+</p>
+	
